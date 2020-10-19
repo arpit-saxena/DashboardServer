@@ -17,6 +17,7 @@ import projectRouter from './controllers/project';
 import eventRouter from './controllers/event';
 import itemRouter from './controllers/item';
 import resourceRouter from './controllers/resource';
+import backupRouter from './controllers/backup';
 
 import init from './utils/init';
 
@@ -57,6 +58,7 @@ apiRouter.use('/user', userRouter);
 apiRouter.use('/project', projectRouter);
 apiRouter.use('/event', eventRouter);
 apiRouter.use('/item', itemRouter);
+apiRouter.use('/backup', backupRouter);
 
 // test route to make sure everything is working
 apiRouter.get('/', (_, res) => {
